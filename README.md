@@ -7,7 +7,7 @@
 **Intent is not authority. Give consequential actions a boundary, a decision, and an accountable trail.**
 
 <p>
-  <img src="control-room-preview.png" alt="Holdpoint control room overview with route coverage, evidence activity, and approval status" width="100%">
+  <img src="docs/walkthrough/landing-page.png" alt="Holdpoint landing page featuring Authority before impact, the action control story, and navigation to the policy graph, coverage, evidence, and console" width="100%">
 </p>
 
 <sub>Interactive local simulation · seeded data · no live destination actions</sub>

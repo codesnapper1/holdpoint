@@ -1,0 +1,31 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+
+# Secrets: keep local credentials out of Git; commit only the template.
+.env*
+!.env.example
+
+# Local agent/editor state and design research are not app source.
+/.antigravity/
+/.vscode/
+/frontend-ui-ux-research/
+/frontend-ui-ux-skill/
+/frontend-ui-ux-research.zip
+/frontend-ui-ux-skill.zip
+
+# Recorded demos, extracted frames, and intermediate design exports.
+/demo/
+/HOLDPOINT*.mp4
+/HOLDPOINT*.srt
+/holdpoint-coverage-fix.jpg
+/holdpoint-evidence-fix.jpg
+/holdpoint-frontend-preview.jpg
+/holdpoint-frontend-refined.jpg
+/holdpoint-frontend.html
+/persona-*-preview.png
+/public/holdpoint_hero_gate.jpg
+/entelechy-frontend/

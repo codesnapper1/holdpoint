@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="570" viewBox="0 0 1400 570" role="img" aria-labelledby="title desc">
+  <title id="title">Holdpoint architecture</title>
+  <desc id="desc">User and optional Gemini interpretation create a typed proposal. Validation and deterministic policy lead to a local simulated destination, with approvals and evidence recorded in memory.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151d25"/><stop offset="1" stop-color="#0b1016"/></linearGradient>
+    <linearGradient id="gate" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#25313a"/><stop offset="1" stop-color="#172129"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 10 5 0 10z" fill="#efa95e"/></marker>
+  </defs>
+  <rect width="1400" height="570" rx="24" fill="url(#bg)"/>
+  <path d="M28 1h1344" stroke="#efa95e" stroke-width="2" opacity=".8"/>
+  <text x="56" y="55" fill="#efa95e" font-family="Consolas,monospace" font-size="12" letter-spacing="2.4">HOLDPOINT / LOCAL PROTOTYPE ARCHITECTURE</text>
+  <text x="56" y="103" fill="#f5f7f8" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700">Intent proposes. Policy decides. The demo records a simulated result.</text>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <rect x="54" y="160" width="212" height="155" rx="14" fill="#141b23" stroke="#3a4652"/>
+    <text x="76" y="193" fill="#efa95e" font-family="Consolas,monospace" font-size="10" letter-spacing="1.5">01 / INPUT</text>
+    <text x="76" y="230" fill="#f5f7f8" font-size="19" font-weight="700">Person or agent</text>
+    <text x="76" y="259" fill="#b7c0c9" font-size="14">Natural-language intent</text>
+    <text x="76" y="283" fill="#8493a1" font-size="12">Persona · role · context</text>
+    <path d="M274 237h48" fill="none" stroke="#efa95e" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="332" y="160" width="218" height="155" rx="14" fill="#141b23" stroke="#3a4652"/>
+    <text x="354" y="193" fill="#efa95e" font-family="Consolas,monospace" font-size="10" letter-spacing="1.5">02 / DRAFT</text>
+    <text x="354" y="230" fill="#f5f7f8" font-size="19" font-weight="700">Action contract</text>
+    <text x="354" y="259" fill="#b7c0c9" font-size="14">Target · parameters</text>
+    <text x="354" y="283" fill="#8493a1" font-size="12">Impact · authority · bounds</text>
+    <path d="M558 237h48" fill="none" stroke="#efa95e" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="616" y="145" width="270" height="185" rx="16" fill="url(#gate)" stroke="#efa95e" stroke-width="1.5"/>
+    <rect x="616" y="145" width="270" height="4" rx="2" fill="#efa95e"/>
+    <text x="640" y="180" fill="#efa95e" font-family="Consolas,monospace" font-size="10" letter-spacing="1.5">03 / CONTROL GATE</text>
+    <text x="640" y="218" fill="#f5f7f8" font-size="20" font-weight="700">Validate + decide</text>
+    <text x="640" y="247" fill="#c5cdd4" font-size="14">Schema · inspection · policy</text>
+    <text x="640" y="271" fill="#c5cdd4" font-size="14">Authority · impact · recovery</text>
+    <text x="640" y="305" fill="#8493a1" font-family="Consolas,monospace" font-size="10" letter-spacing="1">DETERMINISTIC ENGINE</text>
+    <path d="M894 237h48" fill="none" stroke="#efa95e" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="952" y="160" width="192" height="155" rx="14" fill="#141b23" stroke="#3a4652"/>
+    <text x="974" y="193" fill="#efa95e" font-family="Consolas,monospace" font-size="10" letter-spacing="1.5">04 / RESOLVE</text>
+    <text x="974" y="230" fill="#f5f7f8" font-size="19" font-weight="700">Local outcome</text>
+    <text x="974" y="259" fill="#b7c0c9" font-size="14">Approve · deny · hold</text>
+    <text x="974" y="283" fill="#8493a1" font-size="12">In-memory destinations</text>
+    <path d="M1152 237h48" fill="none" stroke="#efa95e" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="1210" y="160" width="138" height="155" rx="14" fill="#141b23" stroke="#3a4652"/>
+    <text x="1232" y="193" fill="#efa95e" font-family="Consolas,monospace" font-size="10" letter-spacing="1.5">05 / RECORD</text>
+    <text x="1232" y="230" fill="#f5f7f8" font-size="17" font-weight="700">Evidence</text>
+    <text x="1232" y="259" fill="#b7c0c9" font-size="13">Timeline</text>
+    <text x="1232" y="283" fill="#8493a1" font-size="12">Linked ledger</text>
+  </g>
+  <path d="M751 344v55h-455" fill="none" stroke="#82b9e6" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <path d="M296 399v-20" fill="none" stroke="#82b9e6" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="54" y="420" width="826" height="92" rx="12" fill="#111a22" stroke="#334451"/>
+  <text x="78" y="454" fill="#82b9e6" font-family="Consolas,monospace" font-size="10" letter-spacing="1.6">OPTIONAL MODEL ASSISTANCE</text>
+  <text x="78" y="482" fill="#f5f7f8" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="650">Gemini can draft intent; its output remains a proposal for code-owned checks.</text>
+  <text x="78" y="500" fill="#8493a1" font-family="Segoe UI,Arial,sans-serif" font-size="12">Without a key, the local semantic intent compiler handles the demo path.</text>
+  <rect x="904" y="420" width="444" height="92" rx="12" fill="#211b15" stroke="#765a36"/>
+  <text x="928" y="454" fill="#efa95e" font-family="Consolas,monospace" font-size="10" letter-spacing="1.6">IMPORTANT BOUNDARY</text>
+  <text x="928" y="482" fill="#f5f7f8" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="650">No provider integrations. No live action dispatch.</text>
+  <text x="928" y="500" fill="#b7c0c9" font-family="Segoe UI,Arial,sans-serif" font-size="12">State resets when the local server restarts.</text>
+  <text x="56" y="546" fill="#8493a1" font-family="Consolas,monospace" font-size="10" letter-spacing="1.3">REACT + EXPRESS · VITE · GEMINI OPTIONAL · SEEDED DESTINATION REGISTRY</text>
+</svg>
